@@ -5,15 +5,32 @@
   <title>Network Visualization</title>
   <script src="https://d3js.org/d3.v4.min.js"></script>
   <script src="https://d3js.org/d3-scale-chromatic.v1.min.js"></script>
-  <!-- <script src="https://d3js.org/d3-collection.v1.min.js"></script>
-  <script src="https://d3js.org/d3-dispatch.v1.min.js"></script>
-  <script src="https://d3js.org/d3-quadtree.v1.min.js"></script>
-  <script src="https://d3js.org/d3-timer.v1.min.js"></script>
-  <script src="https://d3js.org/d3-force.v1.min.js"></script> -->
 
 </head>
 <body>
+	
+<!--   Loader	 -->
+<div class="parent" id="parent">
+    <div class="loader" id="loader"></div>
+</div>
+		
   <style>
+	  
+.loader {
+    border: 4px solid #f3f3f3; /* Light grey */
+    border-top: 4px solid #3498db; /* Blue */
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    animation: spin 2s linear infinite;
+    margin-left: 300px;
+    margin-top: 300px;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
   .links line {
     /* stroke: #3379E4; */
     /* stroke-opacity: 0.1; */
