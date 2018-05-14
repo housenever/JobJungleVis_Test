@@ -1,8 +1,11 @@
 
 function getData(netData){
+  
+  var jobId= getQueryVariable("id");
+  console.log(jobId);
 
   var netData = {"nodes": [], "links": [], "finished": false};
-  var jobId = "66533bab73fbaf26c64dbb52224bd251";
+//   var jobId = "66533bab73fbaf26c64dbb52224bd251";
   var jobName = "Computer Game Designer"; //这个变量要提前储存起来
   var relatedJobs = [];
 
