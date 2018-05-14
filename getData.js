@@ -355,7 +355,7 @@ function getData(netData){
           var loader=document.getElementById("loader");
           parent.removeChild(loader);
 
-          drawVis(netData)
+          drawVis(netData);
     }
     )
     .catch(function(e) {
