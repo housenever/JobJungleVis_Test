@@ -65,9 +65,10 @@ function getData(netData){
   function drawVis(netData){
 
     var svg = d3.select("svg")
-    .call(d3.zoom().on("zoom", function() {
-      svg.attr("transform", d3.event.transform)
-    })).on("dblclick.zoom", null),
+//     .call(d3.zoom().on("zoom", function() {
+//       svg.attr("transform", d3.event.transform)
+//     }))
+    .on("dblclick.zoom", null),
     width = +svg.attr("width"),
     height = +svg.attr("height");
 
