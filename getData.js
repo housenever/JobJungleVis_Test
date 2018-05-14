@@ -9,7 +9,7 @@ function getData(netData){
   //-------------------
   //1. get related skills
   //-------------------
-  fetch("http://api.dataatwork.org/v1/jobs/" + String(jobId) + "/related_skills")
+  fetch("https://api.dataatwork.org/v1/jobs/" + String(jobId) + "/related_skills")
   .then(function(response) {
     return response.json();
   })
@@ -242,7 +242,7 @@ function getData(netData){
 
     for (var i = 0; i < relatedJobs.length; i++) {
 
-      fetch("http://api.dataatwork.org/v1/jobs/" + String(relatedJobs[i]) + "/related_skills")
+      fetch("https://api.dataatwork.org/v1/jobs/" + String(relatedJobs[i]) + "/related_skills")
       .then(function(response) {
         return response.json();
       })
@@ -278,7 +278,7 @@ function getData(netData){
   }
 
   function searchRelatedJob(){
-    fetch("http://api.dataatwork.org/v1/jobs/" + String(jobId) + "/related_jobs")
+    fetch("https://api.dataatwork.org/v1/jobs/" + String(jobId) + "/related_jobs")
     .then(function(response) {
       return response.json();
     })
