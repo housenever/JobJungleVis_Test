@@ -143,7 +143,7 @@ function getData(netData){
       if (d.group == 1) {
         return "jobNode";
       }
-      if (d.group == 0) {
+      else if (d.group == 0) {
         return "mainNode"
       }
     })
