@@ -350,6 +350,10 @@ function getData(netData){
     //   makeRelatedJobLink(relatedJobs);
     // })
     .then(function(){
+           
+          var parent=document.getElementById('parent');
+          var loader=document.getElementById("loader");
+          parent.removeChild(loader);
 
           drawVis(netData)
     }
