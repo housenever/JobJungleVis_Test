@@ -115,7 +115,7 @@ function getData(netData){
       if (d.group == 11) {
         return 0.45;
       } else {
-        return 0.13;
+        return 0.1;
       }
     })
     .attr("stroke", function(d) {
@@ -129,7 +129,7 @@ function getData(netData){
       if (d.group == 11) {
         return 3;
       } else {
-        return 1;
+        return 0.8;
       }
     });
 
