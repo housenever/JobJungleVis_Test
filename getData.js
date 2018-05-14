@@ -1,6 +1,3 @@
-getData();
-
-
 function getData(netData){
 
   var netData = {"nodes": [], "links": [], "finished": false};
